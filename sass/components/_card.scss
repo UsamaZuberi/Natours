@@ -131,10 +131,11 @@
 
     //BACK SIDE STYLING
     &__cta {
-        position: absolute;
+        /* position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
+        @include center-xy-abs;
         width: 90%;
         text-align: center;
     }
