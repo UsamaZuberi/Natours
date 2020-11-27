@@ -77,9 +77,26 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                        <!-- RESOLUTION SWITCHING -->
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                                alt="Photo 1" class="composition__photo composition__photo--p1" 
+                                img src="img/nat-1-large.jpg">
+
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                                alt="Photo 2" class="composition__photo composition__photo--p2" 
+                                img src="img/nat-2-large.jpg">
+
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                                alt="Photo 3" class="composition__photo composition__photo--p3"
+                                img src="img/nat-3-large.jpg">
+
+                        <!-- NORMAL WAY -->
+                        <!-- <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                         <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
             </div>
@@ -344,7 +361,21 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+                <!-- //REGULAR WAY -->
+                <!-- <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo"> -->
+
+                <!-- DENSITY SWITCHING -->
+                <!-- <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo"> -->
+
+                <!-- ART DIRECTION -->
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
+                            media="(max-width: 37.5em)">
+
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" 
+                            alt="Full logo" 
+                            img src="img/logo-green-2x.png">
+                </picture>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -360,7 +391,13 @@
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Built by <a href="https://www.linkedin.com/in/muhammadusamazuberi/" target="_blank" class="footer__link">Muhammad Usama Zuberi</a> at <a href="https://www.softthree.com" target="_blank" class="footer__link">SoftThree</a> for the online course <a href="https://www.udemy.com/share/101Wkw/" target="_blank" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
+                        Built by <a href="https://www.linkedin.com/in/muhammadusamazuberi/" target="_blank"
+                            class="footer__link">Muhammad Usama Zuberi</a> at <a href="https://www.softthree.com"
+                            target="_blank" class="footer__link">SoftThree</a> for the online course <a
+                            href="https://www.udemy.com/share/101Wkw/" target="_blank" class="footer__link">Advanced CSS
+                            and Sass</a>. Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this
+                        webpage for both personal and commercial use, but NOT to claim it as your own design. A credit
+                        to the original author, Jonas Schmedtmann, is of course highly appreciated!
                     </p>
                 </div>
             </div>
